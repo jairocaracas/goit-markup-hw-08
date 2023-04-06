@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStudio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css">
+    <!-- Mis Estilos -->
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <nav class="header__nav">
+                <a class="logo" href="#"> Web<span class="logo--dark">Studio</span> </a>
+                <ul class="header__menu list">
+                    <li class="header__item">
+                        <a class="header__link" href="./index.html">Estudio</a>
+                    </li>
+
+                    <li class="header__item">
+                        <a class="header__link header__link--current" href="./portfolio.html">Portafolio</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" data-modal-open>Contactanos</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <ul class="contact__list list">
+                <li class="contact__item">
+                    <a class="contact__link" href="mailto:info@devstudio.com">
+                        <svg class="contact__icon">
+                            <use xlink:href="./img/icons.svg#icon-mail"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
+                </li>
+                <li class="contact__item">
+                    <a class="contact__link" href="tel:+525555296000 ">
+                        <svg class="contact__icon">
+                            <use xlink:href="./img/icons.svg#icon-phone"></use>
+                        </svg>
+                        +52 55 5529 6000</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <ul class="portfolio__filter list">
+                    <li><input class="portfolio__filter-item" type="button" value="Todo"></li>
+                    <li><input class="portfolio__filter-item" type="button" value="Sitios-web"></li>
+                    <li><input class="portfolio__filter-item" type="button" value="Aplicaciones"></li>
+                    <li><input class="portfolio__filter-item" type="button" value="Diseño"></li>
+                    <li><input class="portfolio__filter-item" type="button" value="Marketing"></li>
+                </ul>
+            </div>
+
+            <div class="container">
+                <ul class="portfolio__list list">
+                    <li class="portfolio__item">
+                        <div class="portfolio__card">
+                            <img src="./img/portfolio-1.jpg" alt="Tecnoduck website" width="370" height="294">
+                            <div class="portfolio__card--overlay">
+                                <p class="portfolio__text">Tecnoduck es una plataforma de distribución de coronavirus de
+                                    última generación. Las
+                                    compañías usan esta plataforma para el espionaje digital y los ataques a los
+                                    servidores
+                                    seguros de la competencia.</p>
+                            </div>
+                        </div>
+                        <h3 class="portfolio__title">Tecnoduck</h3>
+                        <p class="portfolio__text">
+                            Sitio-web
+                        </p>
+                    </li>
+
+                    <li class="portfolio__item">
+                        <div class="portfolio__card">
+                            <img src="./img/portfolio-2.jpg" alt="Poster competencia" width="370" height="294">
+                            <div class="portfolio__card--overlay">
+                                <p class="portfolio__text">Tecnoduck es una plataforma de distribución de coronavirus de
+                                    última generación. Las
+                                    compañías usan esta plataforma para el espionaje digital y los ataques a los
+                                    servidores
+                                    seguros de la competencia.</p>
+                            </div>
+                        </div>
+                        <h3 class="portfolio__title">Póster de Nueva Orleans vs Estrella Dorada</h3>
+                        <p class="portfolio__text">
+                            Diseño
+                        </p>
+                    </li>
+
+                    <li class="portfolio__item">
+                        <div class="portfolio__card">
+                            <img src="./img/portfolio-3.jpg" alt="App Restaurante Seafood" width="370" height="294">
+                            <div class="portfolio__card--overlay">
+                                <p class="portfolio__text">Tecnoduck es una plataforma de distribución de coronavirus de
+                                    última generación. Las
+                                    compañías usan esta plataforma para el espionaje digital y los ataques a los
+                                    servidores
+                                    seguros de la competencia.</p>
+                            </div>
+                        </div>
+                        <h3 class="portfolio__title">Restaurante Seafood</h3>
+                        <p class="portfolio__text">
+                            Aplicaciones
+                        </p>
+                    </li>
+
+                    <li class="portfolio__item">
+                        <div class="portfolio__card">
+                            <img src="./img/portfolio-4.jpg" alt="Proyecto Prime" width="370" height="294">
+                            <div class="portfolio__card--overlay">
+                                <p class="portfolio__text">Tecnoduck es una plataforma de distribución de coronavirus de
+                                    última generación. Las
+                                    compañías usan esta plataforma para el espionaje digital y los ataques a los
+                                    servidores
+                                    seguros de la competencia.</p>
+                            </div>
+                        </div>
+                        <h3 class="portfolio__title">Proyecto Prime</h3>
+                        <p class="portfolio__text">
+                            Marketing
+                        </p>
+                    </li>
+
+                    <li class="portfolio__item">
+                        <div class="portfolio__card">
+                            <img src="./img/portfolio-5.jpg" alt="App Proyecto Cajas" width="370" height="294">
+                            <div class="portfolio__card--overlay">
+                                <p class="portfolio__text">Tecnoduck es una plataforma de distribución de coronavirus de
+                                    última generación. Las
+                                    compañías usan esta plataforma para el espionaje digital y los ataques a los
+                                    servidores
+                                    seguros de la competencia.</p>
+                            </div>
+                        </div>
+                        <h3 class="portfolio__title">Proyecto Cajas</h3>
+                        <p class="portfolio__text">
+                            Aplicaciones
+                        </p>
+                    </li>
+
+                    <li class="portfolio__item">
+                        <div class="portfolio__card">
+                            <img src="./img/portfolio-6.jpg" alt="Sitio web Inspiración" width="370" height="294">
+                            <div class="portfolio__card--overlay">
+                                <p class="portfolio__text">Tecnoduck es una plataforma de distribución de coronavirus de
+                                    última generación. Las
+                                    compañías usan esta plataforma para el espionaje digital y los ataques a los
+                                    servidores
+                                    seguros de la competencia.</p>
+                            </div>
+                        </div>
+                        <h3 class="portfolio__title">La inspiración no tiene límites</h3>
+                        <p class="portfolio__text">
+                            Sitio-web
+                        </p>
+                    </li>
+
+                    <li class="portfolio__item">
+                        <div class="portfolio__card">
+                            <img src="./img/portfolio-7.jpg" alt="Diseño Editorial Edición Limitada" width="370"
+                                height="294">
+                            <div class="portfolio__card--overlay">
+                                <p class="portfolio__text">Tecnoduck es una plataforma de distribución de coronavirus de
+                                    última generación. Las
+                                    compañías usan esta plataforma para el espionaje digital y los ataques a los
+                                    servidores
+                                    seguros de la competencia.</p>
+                            </div>
+                        </div>
+                        <h3 class="portfolio__title">Edición Limitada</h3>
+                        <p class="portfolio__text">
+                            Diseño
+                        </p>
+                    </li>
+
+                    <li class="portfolio__item">
+                        <div class="portfolio__card">
+                            <img src="./img/portfolio-8.jpg" alt="Marketing Proyecto LAB" width="370" height="294">
+                            <div class="portfolio__card--overlay">
+                                <p class="portfolio__text">Tecnoduck es una plataforma de distribución de coronavirus de
+                                    última generación. Las
+                                    compañías usan esta plataforma para el espionaje digital y los ataques a los
+                                    servidores
+                                    seguros de la competencia.</p>
+                            </div>
+                        </div>
+                        <h3 class="portfolio__title">Proyecto LAB</h3>
+                        <p class="portfolio__text">
+                            Marketing
+                        </p>
+                    </li>
+
+                    <li class="portfolio__item">
+                        <div class="portfolio__card">
+
+                            <img src="./img/portfolio-9.jpg" alt="App Negocio en Crecimiento" width="370" height="294">
+                            <div class="portfolio__card--overlay">
+                                <p class="portfolio__text">Tecnoduck es una plataforma de distribución de coronavirus de
+                                    última generación. Las
+                                    compañías usan esta plataforma para el espionaje digital y los ataques a los
+                                    servidores
+                                    seguros de la competencia.</p>
+                            </div>
+                        </div>
+                        <h3 class="portfolio__title">Negocio en Crecimiento</h3>
+                        <p class="portfolio__text">
+                            Aplicaciones
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <section class="footer__contact">
+                <a class="logo" href="#">
+                    Web<span class="logo--bright">Studio</span>
+                </a>
+                <ul class="list">
+                    <li>
+                        <address> Calz. Ticomán 500, Ciudad de <br> México, CDMX, México</address>
+                    </li>
+
+                    <li>
+                        <a class="footer__link" href="mailto:info@example.com">info@example.com</a>
+                    </li>
+
+                    <li>
+                        <a class="footer__link" href="tel:+525555296000 ">+52 55 5529 6000</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="footer__social-media">
+                <h3 class="footer__title">ENCUENTRENOS EN</h3>
+
+                <ul class="footer__social-media-list list">
+                    <li>
+                        <button class="round-button footer__button" type="button">
+                            <svg class="footer__icon">
+                                <use xlink:href="./img/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </button>
+                    </li>
+
+                    <li>
+                        <button class="round-button footer__button" type="button">
+                            <svg class="footer__icon">
+                                <use xlink:href="./img/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="round-button footer__button" type="button">
+                            <svg class="footer__icon">
+                                <use xlink:href="./img/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="round-button footer__button" type="button">
+                            <svg class="footer__icon">
+                                <use xlink:href="./img/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="footer__social-media">
+                <h3 class="footer__title">SUSCRÍBASE al boletín informativo</h3>
+                <form>
+                    <input class="footer__input" type="email" placeholder="Correo electrónico" required>
+                    <button class="button--suscribe" type="submit">
+                        Suscríbase
+                        <svg class="footer__icon--submit">
+                            <use xlink:href="./img/icons.svg#icon-suscribe"></use>
+                        </svg>
+                    </button>
+
+                </form>
+            </section>
+
+        </div>
+
+    </footer>
+
+</body>
+
+
+</html>

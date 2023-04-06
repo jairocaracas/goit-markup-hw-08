@@ -1,0 +1,35 @@
+.hero {
+  background: linear-gradient($dark-bg-color-opacity, $dark-bg-color-opacity),
+    url('../img/bg-header.jpg');
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 1199px) {
+    height: 400px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+  }
+
+  .hero__title {
+    color: $secondary-text-color;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.4;
+    padding-bottom: 30px;
+
+    @media screen and (max-width: 1199px) {
+      font-size: 26px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+    }
+  }
+}

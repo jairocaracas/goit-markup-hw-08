@@ -1,0 +1,32 @@
+@media screen and (max-width: 1199px) {
+  .about-us {
+    display: none;
+  }
+}
+.about-us__list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+
+  .about-us__card {
+    position: relative;
+    width: 370px;
+    height: 294px;
+  }
+
+  .about-us__item {
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $dark-bg-color-opacity;
+    left: 0;
+    bottom: 0;
+  }
+
+  .about-us__title {
+    color: $secondary-text-color;
+  }
+}

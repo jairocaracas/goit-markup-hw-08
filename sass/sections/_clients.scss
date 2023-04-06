@@ -1,0 +1,58 @@
+.clients {
+  background: $primary-bg-color;
+  flex-wrap: wrap;
+}
+
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+
+.clients__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px $icon-color;
+  border-radius: 4px;
+  height: 92px;
+  cursor: pointer;
+
+  @media screen and (max-width: 767px) {
+    width: calc(100% / 2 - 2 * 15px);
+    margin: 15px;
+  }
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 3 - 2 * 15px);
+    margin: 15px 0;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+    margin: 0;
+  }
+
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border: solid 1px $accent-color;
+  }
+
+  .clients__logo {
+    fill: $icon-color;
+    width: 106px;
+    height: 52.83px;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover > .clients__logo,
+  &:focus > .clients__logo {
+    fill: $accent-color;
+  }
+}

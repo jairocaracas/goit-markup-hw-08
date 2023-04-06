@@ -1,0 +1,192 @@
+.footer {
+  background-color: $dark-bg-color;
+  color: $secondary-text-color;
+  font-size: 14px;
+  font-weight: 400;
+
+  .footer-container {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media screen and (min-width: 480px) {
+      width: 480px;
+      height: 603px;
+      flex-direction: column;
+      justify-content: center;
+    }
+    @media screen and (min-width: 768px) {
+      width: 768px;
+      height: 463px;
+      padding: 0 89px 60px 89px;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+      height: 262px;
+      padding: 0;
+      justify-content: space-between;
+    }
+  }
+
+  .footer__contact {
+    margin-top: 60px;
+
+    .footer__link {
+      text-decoration: none;
+      color: $secondary-text-color;
+      opacity: 0.6;
+
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .footer__link:hover,
+    .footer__link:focus {
+      color: $accent-color;
+      opacity: 1;
+    }
+  }
+  .logo {
+    font-family: 'Raleway', serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: $accent-color;
+    text-decoration: none;
+    .logo--bright {
+      color: $secondary-text-color;
+    }
+  }
+
+  .footer__social-media {
+    margin-top: 75px;
+
+    .footer__title {
+      color: $secondary-text-color;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .footer__social-media-list {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .footer__button {
+      @extend %round-button;
+      margin: 20px 10px 0 0;
+    }
+
+    .footer__button:hover,
+    .footer__button:focus {
+      background-color: $accent-color;
+      color: $secondary-text-color;
+    }
+
+    .footer__icon {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      stroke-width: 0;
+      stroke: currentColor;
+      fill: white;
+    }
+
+    .footer__input {
+      @media screen and (max-width: 1199px) {
+        width: 100%;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 358px;
+      }
+      height: 50px;
+      padding-right: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+      background: none;
+      color: $secondary-text-color;
+      padding: 12px;
+      margin-top: 20px;
+    }
+    .button--suscribe {
+      background: $accent-color;
+      color: $secondary-text-color;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+      border-style: none;
+      font-size: 16px;
+      width: 200px;
+      height: 50px;
+      cursor: pointer;
+      margin-left: 12px;
+      margin-top: 30px;
+      text-align: left;
+      padding-left: 39px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .footer__icon--submit {
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: 13px;
+      right: 28px;
+    }
+
+    .button--suscribe:hover,
+    .button--suscribe:focus {
+      animation-name: submitButton;
+      animation-duration: 1s;
+      animation-timing-function: cubic-bezier(0.5, 0.2, 0.5, 0.8);
+    }
+
+    .button--suscribe:hover > .footer__icon--submit,
+    .button--suscribe:focus > .footer__icon--submit {
+      animation-name: submitIconAnimation;
+      animation-duration: 1s;
+      animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .footer__social-media,
+    .footer__info,
+    .footer__contact {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199) {
+    .footer__social-media,
+    .footer__info,
+    .footer__contact {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 30px;
+    }
+  }
+
+  // @media screen and (min-width: 1200px) {
+  //   .footer__social-media {
+  //     text-align: left;
+  //     display: flex;
+  //     flex-direction: row;
+  //     justify-content: center;
+  //     align-items: center;
+  //     margin: 30px;
+  //   }
+  // }
+}
