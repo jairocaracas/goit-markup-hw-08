@@ -19,15 +19,16 @@
     @media screen and (min-width: 768px) {
       width: 768px;
       height: 463px;
-      padding: 0 89px 60px 89px;
       flex-direction: row;
       justify-content: space-around;
     }
     @media screen and (min-width: 1200px) {
+      display: flex;
       width: 1200px;
       height: 262px;
       padding: 0;
       justify-content: space-between;
+      align-items: flex-start;
     }
   }
 
@@ -62,7 +63,18 @@
   }
 
   .footer__social-media {
-    margin-top: 75px;
+    @media screen and (max-width: 767px) {
+      margin-top: 60px;
+    }
+
+    @media screen and (min-width: 768px) {
+      &:not(:last-child) {
+        margin-top: 75px;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      margin-top: 75px;
+    }
 
     .footer__title {
       color: $secondary-text-color;
@@ -98,7 +110,7 @@
 
     .footer__input {
       @media screen and (max-width: 1199px) {
-        width: 100%;
+        width: calc(100% - 15px);
       }
       @media screen and (min-width: 1200px) {
         width: 358px;
@@ -163,30 +175,37 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin: 30px;
     }
   }
-  @media screen and (min-width: 768px) and (max-width: 1199) {
-    .footer__social-media,
+  @media screen and (min-width: 768px) {
+    .footer__social-media {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+    }
+
+    .footer__form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
     .footer__info,
     .footer__contact {
       text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin: 30px;
     }
   }
 
-  // @media screen and (min-width: 1200px) {
-  //   .footer__social-media {
-  //     text-align: left;
-  //     display: flex;
-  //     flex-direction: row;
-  //     justify-content: center;
-  //     align-items: center;
-  //     margin: 30px;
-  //   }
-  // }
+  @media screen and (min-width: 1200px) {
+    .footer__social-media {
+      align-items: flex-start;
+    }
+    .footer__info,
+    .footer__contact {
+      text-align: left;
+    }
+  }
 }

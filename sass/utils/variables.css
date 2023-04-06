@@ -13,12 +13,6 @@ body {
   color: #757575;
 }
 
-body h2 {
-  font-size: 36px;
-  font-weight: 700;
-  text-align: center;
-}
-
 body h3 {
   font-size: 18px;
   font-weight: 700;
@@ -49,6 +43,11 @@ body h5 {
 }
 
 @media screen and (min-width: 480px) {
+  h2 {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+  }
   .container {
     margin: 0 auto;
     width: 480px;
@@ -58,6 +57,11 @@ body h5 {
   }
 }
 @media screen and (min-width: 768px) {
+  h2 {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+  }
   .container {
     margin: 0 auto;
     width: 738px;
@@ -67,6 +71,11 @@ body h5 {
   }
 }
 @media screen and (min-width: 1200px) {
+  h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+  }
   .container {
     margin: 0 auto;
     width: 1200px;
