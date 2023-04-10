@@ -10,17 +10,19 @@
     justify-content: center;
 
     @media screen and (max-width: 767px) {
-      height: 603px;
+      min-height: 603px;
       flex-direction: column;
       justify-content: center;
+      padding-bottom: 60px;
     }
 
     @media screen and (min-width: 768px) {
       width: 768px;
-      height: 463px;
+      min-height: 463px;
       flex-direction: row;
       justify-content: space-around;
       flex-wrap: wrap;
+      padding-bottom: 60px;
     }
     @media screen and (min-width: 1200px) {
       display: flex;

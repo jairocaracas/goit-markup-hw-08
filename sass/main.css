@@ -14,6 +14,11 @@ body {
   color: #757575;
 }
 
+body h2 {
+  font-weight: 700;
+  text-align: center;
+}
+
 body h3 {
   font-size: 18px;
   font-weight: 700;
@@ -43,42 +48,33 @@ body h5 {
   list-style: none;
 }
 
+.container {
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 480px) {
-  body h2 {
-    font-size: 28px;
-    font-weight: 700;
-    text-align: center;
-  }
   .container {
-    margin: 0 auto;
     width: 450px;
-  }
-  .section {
-    padding: 60px 0;
   }
 }
 @media screen and (min-width: 768px) {
-  h2 {
-    font-size: 28px;
-    font-weight: 700;
-    text-align: center;
-  }
   .container {
-    margin: 0 auto;
     width: 738px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  body h2 {
+    font-size: 28px;
   }
   .section {
     padding: 60px 0;
   }
 }
 @media screen and (min-width: 1200px) {
-  h2 {
+  body h2 {
     font-size: 36px;
-    font-weight: 700;
-    text-align: center;
   }
   .container {
-    margin: 0 auto;
     width: 1200px;
   }
   .section {
@@ -148,6 +144,16 @@ body h5 {
 /*------- Components -------*/
 .header {
   border-bottom: solid 2px #f5f4fa;
+}
+@media screen and (max-width: 767px) {
+  .header {
+    margin: 0 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    margin: 0s;
+  }
 }
 .header .header__nav {
   display: flex;
@@ -333,18 +339,20 @@ body h5 {
 }
 @media screen and (max-width: 767px) {
   .footer .footer-container {
-    height: 603px;
+    min-height: 603px;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 768px) {
   .footer .footer-container {
     width: 768px;
-    height: 463px;
+    min-height: 463px;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -808,13 +816,39 @@ body h5 {
 
 /*---------- Sections ----------*/
 .hero {
-  background: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../img/bg-header.jpg");
+  background: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../img/mobile/bg_header-mobile.jpg");
   background-size: cover;
   display: flex;
   text-align: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../img/mobile/bg_header-mobile@2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../img/tablet/bg_header-tablet.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../img/tablet/bg_header-tablet@2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../img/desktop/bg_header-desktop.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../img/desktop/bg_header-desktop@2x.jpg");
+  }
 }
 @media screen and (max-width: 1199px) {
   .hero {

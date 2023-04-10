@@ -1,6 +1,13 @@
 .header {
   border-bottom: solid 2px $secondary-bg-color;
 
+  @media screen and (max-width: 767px) {
+    margin: 0 15px;
+  }
+  @media screen and (min-width: 768px) {
+    margin: 0s;
+  }
+
   .header__nav {
     display: flex;
     align-items: center;
