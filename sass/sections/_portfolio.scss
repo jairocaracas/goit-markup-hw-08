@@ -1,6 +1,16 @@
 .portfolio__filter {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  margin: 50px;
+
+  @media screen and (max-width: 767px) {
+    justify-content: flex-start;
+    margin: 50px 15px;
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin: 50px;
+  }
 
   .portfolio__filter-item {
     background: $secondary-bg-color;
@@ -10,7 +20,8 @@
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
-    margin: 0 4px 50px;
+    margin: 0 4px;
+    margin-bottom: 15px;
 
     transition-property: background-color, color;
     transition-duration: 250ms;
@@ -26,13 +37,32 @@
 .portfolio__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin-top: 50px;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
   .portfolio__item {
     border: 1px solid $secondary-bg-color;
-    margin: 15px 0 15px 0;
+    margin: 15px 0;
     cursor: pointer;
-    max-width: 370px;
+
+    @media screen and (max-width: 767px) {
+      width: calc(100% - 2 * 15px);
+    }
+    @media screen and (min-width: 768px) {
+      width: calc(100% / 2 - 2 * 15px);
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 370px;
+    }
 
     transition-property: box-shadow;
     transition-duration: 250ms;
@@ -56,11 +86,21 @@
   }
 
   .portfolio__card {
-    max-width: 370px;
+    @media screen and (min-width: 480px) {
+      max-width: 450px;
+    }
+    @media screen and (min-width: 768px) {
+      max-width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 370px;
+    }
+
     max-height: 294px;
     position: relative;
     overflow: hidden;
   }
+
   .portfolio__card--overlay {
     background-color: hsla(207, 90%, 54%, 0.9);
     color: $secondary-text-color;
@@ -80,5 +120,11 @@
   .portfolio__item:hover .portfolio__card > .portfolio__card--overlay,
   .portfolio__item:focus .portfolio__card > .portfolio__card--overlay {
     top: 0;
+  }
+
+  .portfolio__picture,
+  .portfolio__picture img {
+    display: block;
+    width: 100%;
   }
 }

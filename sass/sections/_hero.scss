@@ -2,7 +2,6 @@
   background: linear-gradient($dark-bg-color-opacity, $dark-bg-color-opacity),
     url('../img/bg-header.jpg');
   background-size: cover;
-  height: 600px;
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -19,7 +18,6 @@
 
   .hero__title {
     color: $secondary-text-color;
-    font-size: 44px;
     font-weight: 900;
     line-height: 1.4;
     padding-bottom: 30px;

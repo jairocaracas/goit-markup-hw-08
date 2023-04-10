@@ -21,7 +21,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .values__list {
     justify-content: center;
   }
@@ -30,7 +30,7 @@
     width: 100%;
   }
   .value__item {
-    width: calc(100% - 15px);
+    width: calc(100% - 30px);
     padding: 15px 0;
   }
 }
